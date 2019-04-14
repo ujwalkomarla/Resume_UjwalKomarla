@@ -33,57 +33,54 @@
 }
 
 \name{Ujwal Komarla} % Your name
-\address{2504 Avent Ferry Rd, Apt 205, Raleigh, NC 27606} % Your address
-\address{(603)~$\cdot$~470~$\cdot$~0744 \\ uskomarl@ncsu.edu \\ \url{www.linkedin.com/in/ujwalkomarla}} % Your phone number and email
+\address{2504 Avent Ferry Rd, Apt 205, Raleigh, NC 27606 \\ (603)~$\cdot$~470~$\cdot$~0744 } % Your address and phone number
+\address{ujwalkomarla@gmail.com \\ \url{www.linkedin.com/in/ujwalkomarla} \\ \url{www.github.com/ujwalkomarla}} % Your email and resource links
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary address (optional)
 
 \begin{document}
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-\begin{rSubsectionEducation}
-{\bf North Carolina State University, Raleigh, NC} \hfill {Graduated: May 2016} \\ 
-Master of Science in Computer Networking \hfill {GPA: 3.78/4.00}
-\begin{comment}
-\\Course Work: Internet Protocols, Introduction to Operating Systems, Introduction to Algorithms,\\
-\hphantom{Course Work: }Network Design and Management, Routed Network Design and Management,\\
-\hphantom{Course Work: }High Performance Cloud Service
-\end{comment}
-
-
-\end{rSubsectionEducation}
-
-\begin{rSubsectionEducation}
-{\bf University Visvesvaraya College of Engineering, Bengaluru, India} \hfill { Graduated: August 2013} \\ 
-Bachelor of Engineering in Electronics and Communication Engineering \hfill {Percentage: 76.2/100.0}
-\end{rSubsectionEducation}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
+%	PROFESSION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Professional Experience}
-	\begin{rSubsectionEmployment}{Extreme Networks}{July 2016 - Present}{Senior Systems Software Engineer}{Morrisville, US}
-    \item List
-	\end{rSubsectionEmployment}
-	\begin{rSubsectionEmployment}{Extreme Networks}{February 2016 - May 2016}{Systems Software Engineering Intern}{Morrisville, US}
-    \item Responsible for implementing a feature to facilitate the migration of customers from Enterasys's switches to Extreme Network's switches, due to different operating systems that run on these switches.
-	\item The feature - auto save of configuration - was part of the configuration manager module of EXOS - Extreme's network operating system.
-	\end{rSubsectionEmployment}
 
-	\begin{rSubsectionEmployment}{VMware, Inc.}{May 2015 - August 2015}{Product Security Engineering Intern}{Palo Alto,US}
-	\item Responsible for demystifying a long standing query in the world of
-virtualization - Are applications on virtual machines vulnerable due to limited available entropy?
-  	\item Conducted tests on /dev/urandom and /dev/random, evaluating the quality and quantity of randomness gathered.
-    \item Instrumented Linux to determine the contributors and drainers of entropy pool and interpret virtualization impact.
+	\begin{rSubsectionCompany}{Extreme Networks}{Morrisville, US}
+        \begin{comment}
+            \item Periodic configuration auto-save.
+            \item Optimize configuration save/show.
+            \item SNMP request queuing and MIB bugs.
+            \item CLI usability enhancements.
+            \item MLAG orchestration mode.
+            \item Improve identification of faulty applications.
+            \item Restconf Openconfig Implementation.
+            \item Configuration diff.
+            \item Standalone system represented as Slotted system.
+            \item JSONRPC, RESTCONF, Ansible.
+            \item Documentation, and Unit Tests.
+            \item CI/CD - Jenkins, Packer, Vagrant, Docker, 
+        \end{comment}
+	    \begin{rSubsectionCompanyRole}{Senior Systems Software Engineer}{July 2016 - Current}
+	        \item Developed new features and maintained the Configuration Manager(CM), a core module of EXOS infrastructure, as its module owner. CM integrates with every other EXOS application to enable configuring the application, from any North-Bound Interface.
+	        \item Develop Ansible EXOS 'httpapi' plugin and modules over RESTCONF, JSONRPC.
+	    \end{rSubsectionCompanyRole}
+	    
+	    \begin{rSubsectionCompanyRole}{Systems Software Engineering Intern}{February 2016 - May 2016}
+            \item Responsible for implementing a feature to facilitate the migration of customers from Enterasys's switches to Extreme Network's switches, due to different operating systems that run on these switches.
+        	\item The feature - auto save of configuration - was part of the configuration manager module of EXOS - Extreme's network operating system.
+	    \end{rSubsectionCompanyRole}
+	\end{rSubsectionCompany}
+
+	\begin{rSubsectionEmployment}{VMware, Inc.}{Palo Alto, US}{Product Security Engineering Intern}{May 2015 - August 2015}
+    	\item Responsible for demystifying a long standing query in the world of
+    virtualization - Are applications on virtual machines vulnerable due to limited available entropy?
+      	\item Conducted tests on /dev/urandom and /dev/random, evaluating the quality and quantity of randomness gathered.
+        \item Instrumented Linux to determine the contributors and drainers of entropy pool and interpret virtualization impact.
 	\end{rSubsectionEmployment}
-    \begin{rSubsectionEmploymentSimple}{Ericsson India Pvt. Ltd.}{July 2012 - September 2012}{Tools Development Intern}{Gurgaon, India}
-%	\item Programmed tools for Excel, that compressed network statistics to a dashboard representation.
-%  	\item The automation saved the team from manual work and provided opportunity to improve and find new sales.
+	
+    \begin{rSubsectionEmploymentSimple}{Ericsson India Pvt. Ltd.}{Gurgaon, India}{Tools Development Intern}{July 2012 - September 2012}
+        \begin{comment}
+        	\item Programmed tools for Excel, that compressed network statistics to a dashboard representation.
+          	\item The automation saved the team from manual work and provided opportunity to improve and find new sales.   
+        \end{comment}
    	\end{rSubsectionEmploymentSimple}
     
 \end{rSection}
@@ -93,24 +90,49 @@ virtualization - Are applications on virtual machines vulnerable due to limited 
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Technical Strengths}
-\begin{tabularx}{\textwidth}{lX}%{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Networking & BGP, OSPF, TCP/IP, HTTP, FTP, DHCP, NAT, DNS\\ 
-Computer Languages & C(Proficient), Python(Intermediate), Java(Beginner) \newline Web Technologies(DIY) - HTML, CSS, JavaScript, PHP, MySQL\\
-Tools & Git, makefile, GDB, Valgrind, Shell Scripts, Ansible, Vagrant, GNS3
-\end{tabularx}
+    \begin{tabularx}{\textwidth}{lX}%{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Networking & BGP, OSPF, TCP/IP, HTTP, FTP, DHCP, NAT, DNS, JSONRPC, RESTCONF\\ 
+        Computer Languages & C(Proficient), Python(Intermediate), JavaScript(Beginner)\\
+        Web Technologies & HTML, CSS, JavaScript, Node.js, MongoDB\\
+        Tools & Git, makefile, GDB, Valgrind, Shell Scripts, GNS3, Postman \newline Vagrant, Packer, Jenkins, Docker, Ansible, LXC
+    \end{tabularx}
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+    \begin{rSubsectionEducation}
+        {\bf North Carolina State University, Raleigh, NC} \hfill {Graduated: May 2016} \\ 
+        Master of Science in Computer Networking \hfill {GPA: 3.78/4.00}
+        \begin{comment}
+            \\Course Work: Internet Protocols, Introduction to Operating Systems, Introduction to Algorithms,\\
+            \hphantom{Course Work: }Network Design and Management, Routed Network Design and Management,\\
+            \hphantom{Course Work: }High Performance Cloud Service
+        \end{comment}
+    \end{rSubsectionEducation}
+    
+    \begin{rSubsectionEducation}
+        {\bf University Visvesvaraya College of Engineering, Bengaluru, India} \hfill { Graduated: August 2013} \\ 
+        Bachelor of Engineering in Electronics and Communication Engineering \hfill {Percentage: 76.2/100.0}
+    \end{rSubsectionEducation}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{PROJECTS}
+\begin{rSection}{Projects}
     
+    % Project - HPCC - Openstack IaaS deployment w/ Ansible
     \begin{rSubsectionProject}{Openstack IaaS deployment}{January 2016, NCSU}
     	\item Deployed the services - Keystone, Glance, Nova, Nova-network, Cinder, Swift, Heat, Horizon - which are part of the Openstack, an open source cloud computing project.
         \item Automated the deployment using the tools - Ansible and Vagrant.
     \end{rSubsectionProject}
     
+    % Project - OS - Video Based Guidance
     \begin{rSubsectionProject}{Video-based Guidance}{March 2015 - April 2015, NCSU}
     	\item Developed an application ecosystem with Amazon AWS EC2 and RDS, along with Android platform.
         \item The platforms were interfaced using GCM and RESTful web service built around PHP, MySQL on AWS, coupled with android java programming and libstream library.
@@ -118,72 +140,79 @@ Tools & Git, makefile, GDB, Valgrind, Shell Scripts, Ansible, Vagrant, GNS3
     	%\item Developed an Android application to be utilized by a naive person to get guidance from an expert in that field by sending gesture commands superimposed on real-time video stream.
     \end{rSubsectionProject}
     
+    % Project - OS - Demand Paging
     \begin{rSubsectionProject}{Demand Paging for Xinu OS}{March 2015, NCSU}
     	\item Implemented mechanisms to map a large virtual address space to a relatively small physical memory by the technique of swapping pages to the backing store and retrieving it only when accessed by the program i.e, on-demand.
     	\item Replacement policies included were: FIFO, LRU.
     \end{rSubsectionProject}
     
+    % Project - OS - Scheduling Policy
     \begin{rSubsectionProject}{Scheduling Policy For Xinu OS}{January 2015 - February 2015, NCSU}
     	\item Implemented a Linux-like (2.2v Kernel) scheduling policy to evaluate and schedule the processes  based on their priority, goodness quotient and quantum left for each epoch.
         \item Implemented a multi-queue scheduler to facilitate real time and non-real time processes. 
     \end{rSubsectionProject}
     
     \begin{comment} % Project - Network Security
-    \begin{rSubsectionProject}{Key Recovery For 802.11 Wireless Equivalent Privacy(WEP) Protocol}{November 2014, NCSU}
-    	\item Literature review of attack on the WEP link-layer security protocol.
-    	\item Implemented a C program to recover WEP's shared key, based on the partial key exposure in RC-4 Stream cipher discovered by Fluhrer, Mantin, and Shamir.
-    \end{rSubsectionProject}
+        \begin{rSubsectionProject}{Key Recovery For 802.11 Wireless Equivalent Privacy(WEP) Protocol}{November 2014, NCSU}
+        	\item Literature review of attack on the WEP link-layer security protocol.
+        	\item Implemented a C program to recover WEP's shared key, based on the partial key exposure in RC-4 Stream cipher discovered by Fluhrer, Mantin, and Shamir.
+        \end{rSubsectionProject}
     \end{comment}
     
     \begin{comment} % Project - Embedded Systems
-    \begin{rSubsectionProject}{Code Optimization Using SIMD architecture}{October 2014, NCSU}
-    	\item Optimized the alpha blending and gravity simulation program by taking advantage of the Beaglebone's SIMD \\architecture running Debian OS.
-    \end{rSubsectionProject}
+        \begin{rSubsectionProject}{Code Optimization Using SIMD architecture}{October 2014, NCSU}
+        	\item Optimized the alpha blending and gravity simulation program by taking advantage of the Beaglebone's SIMD \\architecture running Debian OS.
+        \end{rSubsectionProject}
     \end{comment}
     
     \begin{comment} % Project - IP - P2MP
-    \begin{rSubsectionProject}{Point-To-Multipoint File Transfer Protocol}{October 2014, NCSU}
-    	\item Implemented a sophisticated and reliable point-to-multipoint file transfer protocol over UDP as against the point-to-point transfer limitation of FTP, given the utilization of TCP for reliable data transfer between the endpoints. 
-        \item A stop-and-wait ARQ scheme was implemented at the application layer to provide reliability.
-    \end{rSubsectionProject}
-\end{comment}
+        \begin{rSubsectionProject}{Point-To-Multipoint File Transfer Protocol}{October 2014, NCSU}
+        	\item Implemented a sophisticated and reliable point-to-multipoint file transfer protocol over UDP as against the point-to-point transfer limitation of FTP, given the utilization of TCP for reliable data transfer between the endpoints. 
+            \item A stop-and-wait ARQ scheme was implemented at the application layer to provide reliability.
+        \end{rSubsectionProject}
+    \end{comment}
 
-    \begin{rSubsectionProject}{Peer-To-Peer Application}{September 2014, NCSU}
-      \item Implemented a P2P web application with distributed file indexing, to share RFC files, as an example.
-      \item The system was designed for concurrent connections among the peers with TCP as the Transport layer protocol.
-    \end{rSubsectionProject}
+    \begin{comment}% Project - IP - P2P Application
+        \begin{rSubsectionProject}{Peer-To-Peer Application}{September 2014, NCSU}
+          \item Implemented a P2P web application with distributed file indexing, to share RFC files, as an example.
+          \item The system was designed for concurrent connections among the peers with TCP as the Transport layer protocol.
+        \end{rSubsectionProject}
+    \end{comment}
 
     \begin{comment} % Project - Undergrad Final Year Project
-    \begin{rSubsectionProject}{Vector Quantization}{June 2012 - May 2013, UVCE}
-     Tools : Matlab
-      \item Evaluated different vector quantization algorithms to achieve high compression rates with contained quantization errors for applications in bandwidth constrained networks
-      \item Surveyed the de-noising capability, achieved by using VQ and demonstrated the same on a degraded gray-scale image.
-    \end{rSubsectionProject}
-\end{comment}
+        \begin{rSubsectionProject}{Vector Quantization}{June 2012 - May 2013, UVCE}
+         Tools : Matlab
+          \item Evaluated different vector quantization algorithms to achieve high compression rates with contained quantization errors for applications in bandwidth constrained networks
+          \item Surveyed the de-noising capability, achieved by using VQ and demonstrated the same on a degraded gray-scale image.
+        \end{rSubsectionProject}
+    \end{comment}
 
     \begin{comment} % Project - Freescale Cup
-    \begin{rSubsectionProject}{Robotics, Freescale Cup}{September 2012 - February 2013, UVCE}
-    Tools : Embedded C Programming Language, Tools: RAppID, CodeWarrior IDE, Matlab
-      \item Responsible for the intelligence of the line following smart car, based on the MPC5604B, a 32-bit micro-controller.
-      \item Implemented 1-D edge detection algorithm for the line sensor array camera to determine the path to follow and  Proportional-Integral algorithm for noise reduction in the 1D-camera data and stabilization of the car.
-    \end{rSubsectionProject}
-\end{comment}
-
+        \begin{rSubsectionProject}{Robotics, Freescale Cup}{September 2012 - February 2013, UVCE}
+        Tools : Embedded C Programming Language, Tools: RAppID, CodeWarrior IDE, Matlab
+          \item Responsible for the intelligence of the line following smart car, based on the MPC5604B, a 32-bit micro-controller.
+          \item Implemented 1-D edge detection algorithm for the line sensor array camera to determine the path to follow and  Proportional-Integral algorithm for noise reduction in the 1D-camera data and stabilization of the car.
+        \end{rSubsectionProject}
+    \end{comment}
+    
 \end{rSection}
 
-\begin{comment} % Volunteer Experience
-\begin{rSection}{Volunteer Experience}
-    \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-       \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-       \medskip
-    	\item Workshop Coordinator at IEEE UVCE student chapter, 2012 - 2013
-    	\item Robotics In-charge at IEEE UVCE student chapter, 2011 - 2012  
-        \item Conducted Robotics workshop to 90+ participants for a period of 8 weeks under the aegis of IEEE UVCE.
-        \item Volunteered to raise funds for the National Association for Blind.
-        \item Organized: Android Hands-on, Ham Radio and Amateur satellite workshops.
-        \item Event organizer of intercollegiate technical fests - Inspiron and Impetus - through the years 2009-2012 and cultural fests - Fiesta'12 and Milagro'13
-    \end{list}
-\end{rSection}
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER SECTION
+%----------------------------------------------------------------------------------------
+\begin{comment} 
+    \begin{rSection}{Volunteer Work}
+        \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+           \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+           \medskip
+        	\item Workshop Coordinator at IEEE UVCE student chapter, 2012 - 2013
+        	\item Robotics In-charge at IEEE UVCE student chapter, 2011 - 2012  
+            \item Conducted Robotics workshop to 90+ participants for a period of 8 weeks under the aegis of IEEE UVCE.
+            \item Volunteered to raise funds for the National Association for Blind.
+            \item Organized: Android Hands-on, Ham Radio and Amateur satellite workshops.
+            \item Event organizer of intercollegiate technical fests - Inspiron and Impetus - through the years 2009-2012 and cultural fests - Fiesta'12 and Milagro'13
+        \end{list}
+    \end{rSection}
 \end{comment}
 
 \end{document}
