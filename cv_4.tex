@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \usepackage{tabularx}
 \usepackage{hyperref}
 \hypersetup{
@@ -33,186 +33,237 @@
 }
 
 \name{Ujwal Komarla} % Your name
-\address{2504 Avent Ferry Rd, Apt 205, Raleigh, NC 27606 \\ (603)~$\cdot$~470~$\cdot$~0744 } % Your address and phone number
-\address{ujwalkomarla@gmail.com \\ \url{www.linkedin.com/in/ujwalkomarla} \\ \url{www.github.com/ujwalkomarla}} % Your email and resource links
+% \address{18300 Foresight Dr, Cary, NC 27519 \\ (603)~$\cdot$~470~$\cdot$~0744 } % Your address and phone number
+\address{ujwalkomarla@pm.me \\ (603)~$\cdot$~470~$\cdot$~0744 \\ \url{www.linkedin.com/in/ujwalkomarla} \\ \url{www.github.com/ujwalkomarla}} % Your email and resource links
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary address (optional)
 
 \begin{document}
-%----------------------------------------------------------------------------------------
-%	PROFESSION SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Professional Experience}
-
-	\begin{rSubsectionCompany}{Extreme Networks}{Morrisville, US}
-        \begin{comment}
-            \item Periodic configuration auto-save.
-            \item Optimize configuration save/show.
-            \item SNMP request queuing and MIB bugs.
-            \item CLI usability enhancements.
-            \item MLAG orchestration mode.
-            \item Improve identification of faulty applications.
-            \item Restconf Openconfig Implementation.
-            \item Configuration diff.
-            \item Standalone system represented as Slotted system.
-            \item JSONRPC, RESTCONF, Ansible.
-            \item Documentation, and Unit Tests.
-            \item CI/CD - Jenkins, Packer, Vagrant, Docker, 
-        \end{comment}
-	    \begin{rSubsectionCompanyRole}{Senior Systems Software Engineer}{July 2016 - Current}
-	        \item Developed new features and maintained the Configuration Manager(CM), a core module of EXOS infrastructure, as its module owner. CM integrates with every other EXOS application to enable configuring the application, from any North-Bound Interface.
-	        \item Develop Ansible EXOS 'httpapi' plugin and modules over RESTCONF, JSONRPC.
-	    \end{rSubsectionCompanyRole}
-	    
-	    \begin{rSubsectionCompanyRole}{Systems Software Engineering Intern}{February 2016 - May 2016}
-            \item Responsible for implementing a feature to facilitate the migration of customers from Enterasys's switches to Extreme Network's switches, due to different operating systems that run on these switches.
-        	\item The feature - auto save of configuration - was part of the configuration manager module of EXOS - Extreme's network operating system.
-	    \end{rSubsectionCompanyRole}
-	\end{rSubsectionCompany}
-
-	\begin{rSubsectionEmployment}{VMware, Inc. - \url{https://ujwalkomarla.github.io/Guest_VM_Entropy/}}{Palo Alto, US}{Product Security Engineering Intern}{May 2015 - August 2015}
-    	\item Responsible for demystifying a long standing query in the world of
-    virtualization - Are applications on virtual machines vulnerable due to limited available entropy?
-      	\item Conducted tests on /dev/urandom and /dev/random, evaluating the quality and quantity of randomness gathered.
-        \item Instrumented Linux to determine the contributors and drainers of entropy pool and interpret virtualization impact.
-	\end{rSubsectionEmployment}
-	
-    \begin{rSubsectionEmploymentSimple}{Ericsson India Pvt. Ltd.}{Gurgaon, India}{Tools Development Intern}{July 2012 - September 2012}
-        \begin{comment}
-        	\item Programmed tools for Excel, that compressed network statistics to a dashboard representation.
-          	\item The automation saved the team from manual work and provided opportunity to improve and find new sales.   
-        \end{comment}
-   	\end{rSubsectionEmploymentSimple}
+    %----------------------------------------------------------------------------------------
+    %	PROFESSION SECTION
+    %----------------------------------------------------------------------------------------
+    \begin{rSection}{Professional Experience}
+        \begin{rSubsectionCompany}{Extreme Networks}{Morrisville, US}
+        %H1B {2121 RDU Center Dr, Unit 300, Morrisville, NC 27560}
+            \begin{comment}
+                \item Periodic configuration auto-save.
+                \item Optimize configuration save/show.
+                \item SNMP request queuing and MIB bugs.
+                \item CLI usability enhancements.
+                \item MLAG orchestration mode.
+                \item Improve identification of faulty applications.
+                \item Restconf Openconfig Implementation.
+                \item Configuration diff.
+                \item Standalone system represented as Slotted system.
+                \item Secure EXOS from malicious users by hardening North Bound Interfaces.
+                \item Fix JSONRPC implementation.
+                \item Network Automation - JSONRPC, RESTCONF, Ansible.
+                \item Documentation, and Unit Tests, Integration Tests.
+                \item CI/CD - Jenkins, Packer, Vagrant, Docker. 
+                \item Review Pull Requests and triage Issues.
+                \item Wrote Ansible modules for Extreme EXOS switching platform.
+                \item Engage with users via IRC, Slack, GitHub.
+                \item Evangelize Ansible for network automation to the Team, PLM.
+                \item Comfortable communicating with customers and engineers through both formal & informal means - conferences, presentations, or GitHub Pull Requests & Issues.
+                \item Initiate Python3 support for RESTCONF project.
+                \item Migrate RESTCONF project from gitolite to github.
+                \item Add OpenAPI infrastructure to EXOS.
+                \item Python library management - replace deprecated/active-CVE library with new ones. Upgrade to newer library versions.
+                \item Python extension improvement, refactor, maintenance.
+                \item Features for restconf - compression, json formatting, filtering capabilities.
+                \item Troubleshooting tech transfer - Unified licensing project: EXOS License Manager i.e., Developed user interface and trained GTAC on troubleshooting SE's License manager for the unified licensing project as part of the infrastructure team.
+                \item Played the lead role in python migration project by initiating discussions to run Switch Engine's python infrastructure on v3.8 instead of the obsolete v2.7, in addition to planning the project itinerary and resource requirement.
+                
+                \item Responsible to facilitate the migration of customers from switches that run on EOS to be powered by EXOS. 
+                \item Required understanding the workflow of a customer configuring the networking equipment in the field and perceive the set of important features that was missing from EOS environment in the EXOS system. Then, along with this information I was required to prioritize and select the feature to implement based on the customer requests and company's long-term goals.
     
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Strengths}
-    \begin{tabularx}{\textwidth}{lX}%{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-        Networking & BGP, OSPF, TCP/IP, HTTP, FTP, DHCP, NAT, DNS, JSONRPC, RESTCONF\\ 
-        Computer Languages & C(Proficient), Python(Intermediate), JavaScript(Beginner)\\
-        Web Technologies & HTML, CSS, JavaScript, Node.js, MongoDB\\
-        Tools & Git, makefile, GDB, Valgrind, Shell Scripts, GNS3, Postman \newline KVM, QEMU, Docker, LXC, Jenkins, Ansible, Vagrant 
-    \end{tabularx}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-    \begin{rSubsectionEducation}
-        {\bf North Carolina State University, Raleigh, NC} \hfill {Graduated: May 2016} \\ 
-        Master of Science in Computer Networking \hfill {GPA: 3.78/4.00}
-        \begin{comment}
-            \\Course Work: Internet Protocols, Introduction to Operating Systems, Introduction to Algorithms,\\
-            \hphantom{Course Work: }Network Design and Management, Routed Network Design and Management,\\
-            \hphantom{Course Work: }High Performance Cloud Service
-        \end{comment}
-    \end{rSubsectionEducation}
+                \item Worked in the Platform Independent team of EXOS - Extreme Networks' Network Operating System for Campus and Edge switching platform. Responsibilities included feature implementation, enhancement, maintenance and developer support across multiple EXOS modules.
+                \item Core developer of the configuration manager module - a central piece of EXOS. Some of the major work included - configuration save optimization, configuration diff, MLAG orchestration mode, enhanced debug support to triage issues in the field and improve response time to code fix, enhance CLI commands and simplify CLI commands across different switch modes, SNMP response time during a configuration save.
+                \item Other tasks: development of RESTCONF interfaces, fixing broken windows - coverity issues, help triage and resolve issues with peers, take part in formal and informal code reviews and discussions.
+            \end{comment}
+            \begin{rSubsectionCompanyRole}{Staff Systems Software Engineer}{April 2020 - Present}
+            %H1B {04/01/2020 - Present}
+                \item Lead engineer for the Python migration project to upgrade Switch Engine's(SE) Python infrastructure to v3.8 from the obsolete v2.7. The year-long project involved efforts from ten engineers across teams working on multiple applications, libraries, build scripts and C-extension modules without disrupting product release(s).
+                \item Leading an effort to bring OpenAPI-based REST management to SE as part of a company-wide effort to provide a unified programmable interface across products.
+                \item Implemented Github Action workflows along with adding linting and auto-formatting tools across multiple code repositories to improve developer workflow.
+                \item Drove adoption of OpenAPI specification, a machine-readable interface file for describing, producing, consuming, and visualizing RESTCONF.
+                \item Performed a key role in improving performance of SE's RESTCONF interface by a factor of ten.
+                \item Developed command line interface for the unified licensing project as part of the infrastructure team.
+                \item Trained GTAC team on troubleshooting the SE's License Manager developer for the unified licensing project.
+            \end{rSubsectionCompanyRole}
     
-    \begin{rSubsectionEducation}
-        {\bf University Visvesvaraya College of Engineering, Bengaluru, India} \hfill { Graduated: August 2013} \\ 
-        Bachelor of Engineering in Electronics and Communication Engineering \hfill {Percentage: 76.2/100.0}
-    \end{rSubsectionEducation}
+    	    \begin{rSubsectionCompanyRole}{Senior Systems Software Engineer}{July 2016 - March 2020} 
+    	    %H1B {07/11/2016 - 03/31/2020}
+    	        \item Initiated and implemented support for the programmable RESTCONF/JSONRPC interface of EXOS in Ansible, and was critical in communicating with the Ansible Open Source network team and the community.
+    	        \item Onboarded and mentored two interns to deliver Ansible modules enabling management of core EXOS features.
+    	        \item Develop, test, review, document of standard and proprietary YANG models, and their RESTCONF implementations.
+    	        \item Core developer of the Configuration Manager, a central module of EXOS infrastructure, addressing some long standing limitations and streamlined the debug process for bugs which cut down the time to resolution by three days.
+    	        \item Implemented and enhanced features across various EXOS modules in addition to fixing critical bugs.
+    	    \end{rSubsectionCompanyRole}
+    	    
+    	    % !H1B
+    	    \begin{rSubsectionCompanyRole}{Systems Software Engineering Intern}{February 2016 - May 2016}
+    	    %H1B {02/23/2016 - 05/05/2016}
+                \item Aided migration of customers from Enterasys's switches to Extreme Networks' switches by implementing the auto-save configuration feature as part of the configuration manager module of EXOS.
+    	    \end{rSubsectionCompanyRole}
 
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Projects}
+            \begin{comment} %H1B
+                \item Required skills: Operating systems, Algorithms, C and Python programming, Shell Scripting, Debug tools, Version control system, Computer networking, Linux system architecture.
+            \end{comment}
+            
+    	\end{rSubsectionCompany}
     
-    % Project - HPCC - Openstack IaaS deployment w/ Ansible
-    \begin{rSubsectionProject}{Openstack IaaS deployment}{January 2016, NCSU}
-    	\item Deployed the services - Keystone, Glance, Nova, Nova-network, Cinder, Swift, Heat, Horizon - which are part of the Openstack, an open source cloud computing project.
-        \item Automated the deployment using the tools - Ansible and Vagrant.
-    \end{rSubsectionProject}
-    
-    % Project - OS - Video Based Guidance
-    \begin{rSubsectionProject}{Video-based Guidance - \url{https://ujwalkomarla.github.io/VideoBasedGuidance/}}{April 2015, NCSU}
-    	\item Developed an application ecosystem with Amazon AWS EC2 and RDS, along with Android platform.
-        \item The platforms were interfaced using GCM and RESTful web service built around PHP, MySQL on AWS, coupled with android java programming and libstream library.
-       \item Guidance mechanism included gesture and text commands superimposed on the real-time video stream.
-    	%\item Developed an Android application to be utilized by a naive person to get guidance from an expert in that field by sending gesture commands superimposed on real-time video stream.
-    \end{rSubsectionProject}
-    
-    % Project - OS - Demand Paging
-    \begin{rSubsectionProject}{Demand Paging for Xinu OS}{March 2015, NCSU}
-    	\item Implemented mechanisms to map a large virtual address space to a relatively small physical memory by the technique of swapping pages to the backing store and retrieving it only when accessed by the program i.e, on-demand.
-    	\item Replacement policies included were: FIFO, LRU.
-    \end{rSubsectionProject}
-    
-    % Project - OS - Scheduling Policy
-    \begin{rSubsectionProject}{Scheduling Policy For Xinu OS}{February 2015, NCSU}
-    	\item Implemented a Linux-like (2.2v Kernel) scheduling policy to evaluate and schedule the processes  based on their priority, goodness quotient and quantum left for each epoch.
-        \item Implemented a multi-queue scheduler to facilitate real time and non-real time processes. 
-    \end{rSubsectionProject}
-    
-    \begin{comment} % Project - Network Security
-        \begin{rSubsectionProject}{Key Recovery For 802.11 Wireless Equivalent Privacy(WEP) Protocol}{November 2014, NCSU}
-        	\item Literature review of attack on the WEP link-layer security protocol.
-        	\item Implemented a C program to recover WEP's shared key, based on the partial key exposure in RC-4 Stream cipher discovered by Fluhrer, Mantin, and Shamir.
-        \end{rSubsectionProject}
-    \end{comment}
-    
-    \begin{comment} % Project - Embedded Systems
-        \begin{rSubsectionProject}{Code Optimization Using SIMD architecture}{October 2014, NCSU}
-        	\item Optimized the alpha blending and gravity simulation program by taking advantage of the Beaglebone's SIMD \\architecture running Debian OS.
-        \end{rSubsectionProject}
-    \end{comment}
-    
-    \begin{comment} % Project - IP - P2MP
-        \begin{rSubsectionProject}{Point-To-Multipoint File Transfer Protocol}{October 2014, NCSU}
-        	\item Implemented a sophisticated and reliable point-to-multipoint file transfer protocol over UDP as against the point-to-point transfer limitation of FTP, given the utilization of TCP for reliable data transfer between the endpoints. 
-            \item A stop-and-wait ARQ scheme was implemented at the application layer to provide reliability.
-        \end{rSubsectionProject}
-    \end{comment}
-
-    \begin{comment}% Project - IP - P2P Application
-        \begin{rSubsectionProject}{Peer-To-Peer Application}{September 2014, NCSU}
-          \item Implemented a P2P web application with distributed file indexing, to share RFC files, as an example.
-          \item The system was designed for concurrent connections among the peers with TCP as the Transport layer protocol.
-        \end{rSubsectionProject}
-    \end{comment}
-
-    \begin{comment} % Project - Undergrad Final Year Project
-        \begin{rSubsectionProject}{Vector Quantization}{June 2012 - May 2013, UVCE}
-         Tools : Matlab
-          \item Evaluated different vector quantization algorithms to achieve high compression rates with contained quantization errors for applications in bandwidth constrained networks
-          \item Surveyed the de-noising capability, achieved by using VQ and demonstrated the same on a degraded gray-scale image.
-        \end{rSubsectionProject}
-    \end{comment}
-
-    \begin{comment} % Project - Freescale Cup
-        \begin{rSubsectionProject}{Robotics, Freescale Cup}{September 2012 - February 2013, UVCE}
-        Tools : Embedded C Programming Language, Tools: RAppID, CodeWarrior IDE, Matlab
-          \item Responsible for the intelligence of the line following smart car, based on the MPC5604B, a 32-bit micro-controller.
-          \item Implemented 1-D edge detection algorithm for the line sensor array camera to determine the path to follow and  Proportional-Integral algorithm for noise reduction in the 1D-camera data and stabilization of the car.
-        \end{rSubsectionProject}
-    \end{comment}
-    
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	VOLUNTEER SECTION
-%----------------------------------------------------------------------------------------
-\begin{comment} 
-    \begin{rSection}{Volunteer Work}
-        \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-           \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-           \medskip
-        	\item Workshop Coordinator at IEEE UVCE student chapter, 2012 - 2013
-        	\item Robotics In-charge at IEEE UVCE student chapter, 2011 - 2012  
-            \item Conducted Robotics workshop to 90+ participants for a period of 8 weeks under the aegis of IEEE UVCE.
-            \item Volunteered to raise funds for the National Association for Blind.
-            \item Organized: Android Hands-on, Ham Radio and Amateur satellite workshops.
-            \item Event organizer of intercollegiate technical fests - Inspiron and Impetus - through the years 2009-2012 and cultural fests - Fiesta'12 and Milagro'13
-        \end{list}
+    	\begin{rSubsectionCompany}{VMware, Inc. - \url{https://ujwalkomarla.github.io/Guest_VM_Entropy/}}{Palo Alto, US}
+    	% H1B {3401 Hillview Ave, Palo Alto, CA 94304}
+        	\begin{rSubsectionCompanyRole}{Product Security Engineering Intern}{May 2015 - August 2015}
+        	% H1B {05/18/2015 - 08/14/2015} 
+        	    \item Demystified a long-standing query in the world of virtualization - "Are applications on virtual machines vulnerable due to limited available entropy?" \newline
+        	    The task required instrumenting the Linux kernel to capture data on contributors and drainers of entropy pool, and automating the processing of data received from a couple dozen physical and virtual machines.
+                \item Utilized Data Driven Document(D3) approach to provide multiple views of the data aiding in evaluating the quality and quantity of the entropy pool.
+                \begin{comment} %H1B
+                    \item Required skills : Linux kernel architecture, Programming - C, Javascript, Shell scripting, Data processing and presentation - Data driven documents, Markup language - HTML, CSS, Probability and stochastic process.
+                \end{comment}
+            \end{rSubsectionCompanyRole}
+    	\end{rSubsectionCompany}
+    	
+        \begin{rSubsectionCompany}{Ericsson India Pvt. Ltd.}{Gurgaon, India}
+        %H1B {Ericsson Forum, DLF Cybercity, Sector 25A, Gurugram, Haryana 122002, India}
+            \begin{rSubsectionCompanyRole}{Tools Development Intern}{July 2012 - September 2012}
+            % H1B {07/24/2012 - 09/15/2012} 
+                    \item Performed data-mining on million-plus data entries from telecommunication networks such as GSM, UMTS to provide a simple dashboard representation.
+                    \item The automation helped the team eliminate weeks of manual work with every new data-set, and provided an avenue to improve and find new sales.
+                    %H1B
+                    %\item Required skills : Microsoft Excel, Excel VBA programming, Perl
+            \end{rSubsectionCompanyRole}
+       	\end{rSubsectionCompany}
+        
     \end{rSection}
-\end{comment}
+
+    %----------------------------------------------------------------------------------------
+    %	TECHNICAL STRENGTHS SECTION
+    %----------------------------------------------------------------------------------------
+    \begin{rSection}{Technical Strengths}
+        \begin{tabularx}{\textwidth}{lX}%{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+            Networking & DHCP, DNS, TCP/IP, IPTables, NAT, BGP, OSPF, HTTP, JSONRPC, RESTCONF\\ [0.5ex]
+            Programming Languages & C(Proficient), Python(Proficient), JavaScript(Intermediate), Java(Novice)\\ [0.5ex]
+            Programming Concepts & Data Structures, Algorithms, TDD, CI/CD process, Agile Methodology, Cloud Computing\\ [0.5ex]
+            Web Technologies & HTML, CSS, JavaScript, Node.js, MongoDB, REST, OpenAPI\\ [0.5ex]
+            Tools & Vim, Git, makefile, GDB, Shell Scripts, Postman, PyTest, Docker, Github Actions \newline Ansible, Vagrant, Jenkins, KVM, QEMU, GNS3, LibVirt, LXD, OpenStack\\
+        \end{tabularx}
+        \begin{comment}
+            Networking Concepts: TCP/IP, UDP, VLAN, STP, MPLS, DiffServ, ARP, DHCP, EIGRP, OSPF, BGP, DNS, NAT, VPN, ICMP, IPv6, LDP, RSVP, 802.11 standards, Policy Based Routing, IP SLAs, Network Security protocols.
+            Cisco CLI, Wireshark, OpenStack, Iperf.
+            Programming concepts: TDD, CI/CD, Agile, Cloud(AWS Cloud practitioner/Solutions Architect/Developer), Spring Framework
+            Design Thinking
+        \end{comment}
+    \end{rSection}
+
+    %----------------------------------------------------------------------------------------
+    %	EDUCATION SECTION
+    %----------------------------------------------------------------------------------------
+    \begin{rSection}{Education}
+    
+        \begin{rSubsectionEducation}
+            {\bf North Carolina State University, Raleigh, USA} \hfill {Graduated: May 2016} \\ 
+            Master of Science in Computer Networking \hfill {GPA: 3.78/4.00}
+            \begin{comment} %H1B
+                \\Course Work: Internet Protocols, Introduction to Operating Systems, Introduction to Algorithms,\\
+                \hphantom{Course Work: }Network Design and Management, Routed Network Design and Management,\\
+                \hphantom{Course Work: }High Performance Cloud Service, Computer and Network Security
+            \end{comment}
+        \end{rSubsectionEducation}
+        
+        \begin{rSubsectionEducation}
+            {\bf University Visvesvaraya College of Engineering, Bengaluru, India} \hfill { Graduated: August 2013} \\ 
+            Bachelor of Engineering in Electronics and Communication Engineering \hfill {Percentage: 76.2/100.0}
+            \begin{comment} %H1B
+                \\Course Work: Digital Electronics, Computer Architecture and Organization, Microprocessors,\\
+                \hphantom{Course Work: }Microcontrollers, Embedded Systems, Computer Networks, Probability and Stochastic Process
+            \end{comment}
+        \end{rSubsectionEducation}
+    
+    \end{rSection}
+
+    %----------------------------------------------------------------------------------------
+    %	PROJECTS SECTION
+    %----------------------------------------------------------------------------------------
+    \begin{comment} %H1B
+        \begin{rSection}{Academic Projects}
+            
+            % Project - HPCC - Openstack IaaS deployment w/ Ansible
+            \begin{rSubsectionProject}{Openstack IaaS deployment}{January 2016, NCSU}
+            	\item Deployed the services - Keystone, Glance, Nova, Nova-network, Cinder, Swift, Heat, Horizon - which are part of the Openstack, an open source cloud computing project.
+                \item Automated the deployment using the tools - Ansible and Vagrant.
+            \end{rSubsectionProject}
+            
+            % Project - OS - Video Based Guidance
+            \begin{rSubsectionProject}{Video-based Guidance - \url{https://ujwalkomarla.github.io/VideoBasedGuidance/}}{April 2015, NCSU}
+            	\item Developed an application ecosystem with Amazon AWS EC2 and RDS, along with Android platform.
+                \item The platforms were interfaced using GCM and RESTful web service built around PHP, MySQL on AWS, coupled with android java programming and libstream library.
+               \item Guidance mechanism included gesture and text commands superimposed on the real-time video stream.
+            	%\item Developed an Android application to be utilized by a naive person to get guidance from an expert in that field by sending gesture commands superimposed on real-time video stream.
+            \end{rSubsectionProject}
+            
+            % Project - OS - Demand Paging
+            \begin{rSubsectionProject}{Demand Paging for Xinu OS}{March 2015, NCSU}
+            	\item Implemented mechanisms to map a large virtual address space to a relatively small physical memory by the technique of swapping pages to the backing store and retrieving it only when accessed by the program i.e, on-demand.
+            	\item Replacement policies included were: FIFO, LRU.
+            \end{rSubsectionProject}
+            
+            \begin{rSubsectionProject}{Scheduling Policy For Xinu OS}{February 2015, NCSU}
+        	    \item Implemented a Linux-like (2.2v Kernel) scheduling policy to evaluate and schedule the processes  based on their priority, goodness quotient and quantum left for each epoch.
+                \item Implemented a multi-queue scheduler to facilitate real time and non-real time processes. 
+            \end{rSubsectionProject}
+
+            \begin{rSubsectionProject}{Key Recovery For 802.11 Wireless Equivalent Privacy(WEP) Protocol}{November 2014, NCSU}
+            	\item Literature review of attack on the WEP link-layer security protocol.
+            	\item Implemented a C program to recover WEP's shared key, based on the partial key exposure in RC-4 Stream cipher discovered by Fluhrer, Mantin, and Shamir.
+            \end{rSubsectionProject}
+
+            \begin{rSubsectionProject}{Code Optimization Using SIMD architecture}{October 2014, NCSU}
+            	\item Optimized the alpha blending and gravity simulation program by taking advantage of the Beaglebone's SIMD \\architecture running Debian OS.
+            \end{rSubsectionProject}
+
+            \begin{rSubsectionProject}{Point-To-Multipoint File Transfer Protocol}{October 2014, NCSU}
+            	\item Implemented a sophisticated and reliable point-to-multipoint file transfer protocol over UDP as against the point-to-point transfer limitation of FTP, given the utilization of TCP for reliable data transfer between the endpoints. 
+                \item A stop-and-wait ARQ scheme was implemented at the application layer to provide reliability.
+            \end{rSubsectionProject}
+
+            \begin{rSubsectionProject}{Peer-To-Peer Application}{September 2014, NCSU}
+              \item Implemented a P2P web application with distributed file indexing, to share RFC files, as an example.
+              \item The system was designed for concurrent connections among the peers with TCP as the Transport layer protocol.
+            \end{rSubsectionProject}
+
+            \begin{rSubsectionProject}{Vector Quantization Applications}{June 2012 - May 2013, UVCE}
+             Tools : Matlab
+              \item Evaluated various available Vector Quantization(VQ) algorithms to achieve high compression rates with a specified threshold of quantization errors for utilization in bandwidth constrained networks.
+              \item Surveyed the de-noising capability achieved by using VQ and demonstrated the performance on a degraded gray-scale image.
+            \end{rSubsectionProject}
+
+            \begin{rSubsectionProject}{Robotics, Freescale Cup}{September 2012 - February 2013, UVCE}
+            Tools : Embedded C Programming Language, Tools: RAppID, CodeWarrior IDE, Matlab
+              \item Responsible for the intelligence of the line following smart car, based on the MPC5604B, a 32-bit micro-controller.
+              \item Implemented 1-D edge detection algorithm for the line sensor array camera to determine the path to follow and  Proportional-Integral algorithm for noise reduction in the 1D-camera data and stabilization of the car.
+            \end{rSubsectionProject}
+
+        \end{rSection}
+    \end{comment}
+    
+    %----------------------------------------------------------------------------------------
+    %	VOLUNTEER SECTION
+    %----------------------------------------------------------------------------------------
+    \begin{comment} 
+        \begin{rSection}{Volunteer Work}
+            \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+               \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+               \medskip
+            	\item Workshop Coordinator at IEEE UVCE student chapter, 2012 - 2013
+                \item Organized Android application development Hands-on, Ham Radio and Amateur satellite workshops.
+            	\item Robotics In-charge at IEEE UVCE student chapter, 2011 - 2012  
+                \item As part of an 8-member team, developed and conducted hands-on robotics workshop to 90+ peers spread over 8-weeks providing a glimpse to the world of robotics, and followed it with facilitating participation in inter-collegiate robotics events.
+                \item Event organizer of intercollegiate technical fests - Inspiron and Impetus - through the years 2009-2012 and cultural fests - Fiesta'12 and Milagro'13
+                \item Volunteered to raise funds for the National Association for Blind.
+            \end{list}
+        \end{rSection}
+    \end{comment}
 
 \end{document}

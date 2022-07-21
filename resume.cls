@@ -139,35 +139,13 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsectionEmployment}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  \end{list}
-  \vspace{0em} % Some space after the list of bullet points
-}
-
-\newenvironment{rSubsectionEmploymentSimple}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }
-}
-
-
 \newenvironment{rSubsectionCompany}[2]{ % 2 input arguments - company name, location
- {\bf #1} \hfill {#2} % Bold company name and location on the right
+ {\bf #1} \hfill {\bf #2} % Bold company name and location on the right
   \\
 }
 
 \newenvironment{rSubsectionCompanyRole}[2]{ % 2 input arguments - Job Title, Period
- {\em #1} \hfill {\em #2} % Italic job title and location
+ {\bf \em #1} \hfill {\bf \em #2} % Italic job title and location
  \smallskip
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
@@ -176,6 +154,9 @@
   \vspace{0em} % Some space after the list of bullet points
 }
 
+\newenvironment{rSubsectionCompanyRoleSimple}[2]{ % 2 input arguments - Job Title, Period
+ {\em #1} \hfill {\em #2} % Italic job title and location
+}
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\normalsize} % Size of the name at the top of the document
